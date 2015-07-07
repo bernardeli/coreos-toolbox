@@ -2,7 +2,7 @@ FROM ubuntu:latest
 MAINTAINER Ricardo Bernardeli <ricardobcs@gmail.com>
 
 RUN apt-get update -y -qq && \
-    apt-get install -y -qq vim git htop wget curl ncdu zsh dnsutils
+    apt-get install -y -qq vim git htop ncdu zsh dnsutils httpie
 
 WORKDIR /root
 
