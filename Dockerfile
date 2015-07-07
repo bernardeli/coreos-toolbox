@@ -15,6 +15,4 @@ RUN git clone git://github.com/bernardeli/dotfiles.git ~/.dotfiles \
 COPY toolbox_bash_profile /root/.toolbox_bash_profile
 RUN echo "source \$HOME/.toolbox_bash_profile" >> ~/.zshrc
 
-RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
 CMD ["zsh"]
